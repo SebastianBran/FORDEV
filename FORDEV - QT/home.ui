@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Home</class>
+ <widget class="QWidget" name="Home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>811</width>
+     <height>671</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 205, 206);
+border-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="te_content">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>531</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+background-color: white;
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>¿Qué estas pensando?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_post">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>60</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+background-color: white;
+color: rgb(0, 0, 0);
+background-color: rgb(243, 243, 243);</string>
+   </property>
+   <property name="text">
+    <string>postear</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="te_title">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>531</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+background-color: white;
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="placeholderText">
+    <string>Titulo</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="sa_posts">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>210</y>
+     <width>671</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="sa_postscontent">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>669</width>
+      <height>439</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QComboBox" name="cb_trends">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>150</y>
+     <width>261</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Más recientes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Más reacciones</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Más relevantes</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pb_aplicar">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>160</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5px;
+background-color: white;
+color: rgb(0, 0, 0);
+background-color: rgb(243, 243, 243);</string>
+   </property>
+   <property name="text">
+    <string>Aplicar</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_filters">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>183</y>
+     <width>261</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Ninguno</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Igual a</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Empieza con</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Termina con</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Está contenido en</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>No está contenido en</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tendencias</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Filtros</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="le_wordKey">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>180</y>
+     <width>181</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>160</y>
+     <width>171</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Palabra clave</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
